@@ -1,0 +1,1 @@
+savedcmd_/home/pes1ug22am098/OS/2/cube_kernal.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/pes1ug22am098/OS/2/cube_kernal.ko /home/pes1ug22am098/OS/2/cube_kernal.o /home/pes1ug22am098/OS/2/cube_kernal.mod.o;  make -f ./arch/x86/Makefile.postlink /home/pes1ug22am098/OS/2/cube_kernal.ko
