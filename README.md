@@ -18,30 +18,18 @@ GCC: Required for compiling the user-space program.
 Linux Kernel Headers: Needed to build the kernel module.
 ### Compiling and Running
 #### User-Space Program
-Compile the cube.c file using GCC:
-bash
-Copy code
+Compile the cube.c file using GCC:  
 gcc -o cube cube.c
-Run the program:
-bash
-Copy code
+Run the program:  
 ./cube
 #### Kernel-Space Module
-Compile the kernel module using the provided Makefile:
-bash
-Copy code
+Compile the kernel module using the provided Makefile:  
 make
-Insert the kernel module:
-bash
-Copy code
+Insert the kernel module:  
 sudo insmod cube_kernal.ko
-Check the kernel log to see the output:
-bash
-Copy code
+Check the kernel log to see the output:  
 dmesg | tail -n 10
-Remove the kernel module:
-bash
-Copy code
+Remove the kernel module:  
 sudo rmmod cube_kernal
 
 ## Code Explanation
